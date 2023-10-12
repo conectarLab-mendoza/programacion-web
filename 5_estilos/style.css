@@ -16,14 +16,20 @@ h1{
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
+    padding: 16px;
 }
 
-div{
+.banner{
     height: 400px;
     background-image: url("./images/banner.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+}
+
+section{
+    text-align: center;
 }
 
 article{
@@ -33,6 +39,7 @@ article{
     width: 300px;
     display: inline-block;
     margin: 24px;
+    border: black 5px solid;
 }
 
 article img{
@@ -41,7 +48,13 @@ article img{
     object-fit: contain;
 }
 
-article :is(h2,p){
+article div{
+    border: black 2px solid;
+}
+
+
+article h2, article p{
     background-color: white;
+    padding:  8px 16px;
 }
 
