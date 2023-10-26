@@ -1,0 +1,32 @@
+body{
+    background-color: chartreuse;
+}
+h1{
+    color: tomato;
+    font-size: 50px;
+    text-align: center;
+}
+
+.cuadrado{
+    width: 400px;
+    height: 400px;
+    background-color: darkorange;
+    transition: all 5s;
+}
+
+.cuadrado:hover{
+    background-color: blue;
+    transform: rotate(45deg);
+}
+
+
+.rectangulo{
+    width: 800px;
+    height: 400px;
+    background-color: seagreen;
+    animation: 100ms infinite;
+}
+
+
+
+
