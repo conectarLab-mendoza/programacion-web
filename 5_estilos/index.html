@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
-
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
     <title>POKÉMON</title>
@@ -16,7 +17,7 @@
     <h1>POKÉMON</h1>
     <div class="banner"></div>
     <section class="animate__animated animate__backInUp">
-        <article >
+        <article class="scale-down-top">
             <img src="./images/pokemon/bulbasaur.gif" alt="bulbasaur">
             <div>
                 <h2>Bulbasaur</h2>
@@ -47,6 +48,29 @@
     </section>
     <button onclick="crearCarta()">Añadir Pokémon</button>
 
+    <div class="pattern">
+        <h2>Conoce los mejores Pokémon</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./images/pokemon/charmander.gif" alt="charmander"></div>
+              <div class="swiper-slide"><img src="./images/pokemon/squirtle.gif" alt="squirtle"></div>
+              <div class="swiper-slide">      <img src="./images/pokemon/bulbasaur.gif" alt="bulbasaur"></div>
+              <div class="swiper-slide"><img src="./images/pokemon/pikachu.gif" alt="pikachu"></div>
+    
+            </div>
+          </div>
+    </div>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
     
 </body>
 

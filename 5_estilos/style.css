@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-body{
+body {
     font-family: 'Pixelify Sans', sans-serif;
     background-image: url("./images/fondo.png");
 }
 
-h1{
+h1 {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     padding: 16px;
 }
 
-.banner{
+.banner {
     height: 400px;
     background-image: url("./images/banner.jpeg");
     background-repeat: no-repeat;
@@ -28,12 +28,12 @@ h1{
     background-attachment: fixed;
 }
 
-section{
+section {
     text-align: center;
 }
 
-article{
-    background:url("./images/fondoCard.png");
+article {
+    background: url("./images/fondoCard.png");
     background-size: 100px;
     padding: 24px;
     width: 300px;
@@ -43,7 +43,7 @@ article{
     transition: all 500ms;
 }
 
-article:hover{
+article:hover {
     width: 500px;
     background-image: url("./images/fondoPlanta.jpg");
     background-position: bottom;
@@ -51,19 +51,110 @@ article:hover{
 }
 
 
-article img{
+article img {
     width: 100%;
     height: 200px;
     object-fit: contain;
 }
 
-article div{
+article div {
     border: black 2px solid;
 }
 
 
-article h2, article p{
+article h2,
+article p {
     background-color: white;
-    padding:  8px 16px;
+    padding: 8px 16px;
 }
 
+.pattern {
+    height: 500px;
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, #444cf7, #e5e5f7), repeating-radial-gradient(circle at center center, #444cf7, #444cf7, 21px, transparent 42px, transparent 21px);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+
+
+
+.scale-down-top {
+    animation: scale-down-top 0.4s in;
+}
+
+@keyframes scale-down-top {
+    0% {
+        transform: scale(1);
+        transform-origin: center top
+    }
+
+    100% {
+        transform: scale(.5);
+        transform-origin: center top
+    }
+}
+
+/* swiper */
+.swiper {
+    width: 240px;
+    height: 320px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .swiper-slide img{
+    width: 100%;
+  }
+
+  .swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+  }
+
+  .swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+  }
+
+  .swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+  }
+
+  .swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+  }
+
+  .swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+  }
+
+  .swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+  }
+
+  .swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+  }
+
+  .swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+  }
+
+  .swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+  }
+
+  .swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+  }
